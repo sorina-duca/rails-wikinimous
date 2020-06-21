@@ -1,0 +1,9 @@
+<%= render "banner" %>
+<div class="container justify-items-center">
+    <% @articles.each do |article| %>
+  <h1 class="text-primary"> <%= link_to article.name, article_path(article) %></h1>
+  <p><%= article.content %></p>
+  <% end %>
+</div>
+
+
